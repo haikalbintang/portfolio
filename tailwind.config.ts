@@ -29,7 +29,8 @@ const config: Config = {
       backgroundImage: {
         "pulse-gradient":
           "linear-gradient(120deg, #FF4D6D 0%, #7C5CFF 55%, #2DD4BF 100%)",
-        "hero-gradient": "radial-gradient(120% 120% at 20% 0%, #1D1640 0%, #120E24 55%, #0B0818 100%)",
+        "hero-gradient":
+          "radial-gradient(120% 120% at 20% 0%, #1D1640 0%, #120E24 55%, #0B0818 100%)",
       },
       keyframes: {
         pulseline: {
