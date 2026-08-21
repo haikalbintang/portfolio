@@ -2,7 +2,10 @@ import PulseDivider from "./PulseDivider";
 
 export default function Hero() {
   return (
-    <section id="top" className="relative overflow-hidden bg-hero-gradient pb-24 pt-36 text-paper">
+    <section
+      id="top"
+      className="relative overflow-hidden bg-hero-gradient pb-24 pt-36 text-paper"
+    >
       {/* ambient glow */}
       <div className="pointer-events-none absolute -left-32 top-10 h-72 w-72 rounded-full bg-pulse-violet/30 blur-[100px]" />
       <div className="pointer-events-none absolute -right-24 top-40 h-72 w-72 rounded-full bg-pulse-teal/20 blur-[100px]" />
@@ -18,9 +21,10 @@ export default function Hero() {
         </h1>
 
         <p className="mt-6 max-w-xl font-body text-lg leading-relaxed text-paper/70">
-          Trained in medicine at Universitas Indonesia, now building full stack products with
-          React, Next.js, TypeScript, Laravel, and FastAPI. I bring a clinician&apos;s eye for
-          detail to interfaces and systems — currently open for freelance and full-time work.
+          Trained in medicine at Universitas Indonesia, now building full stack
+          products with React, Next.js, TypeScript, Laravel, and FastAPI. I
+          bring a clinician&apos;s eye for detail to interfaces and systems —
+          currently open for freelance and full-time work.
         </p>
 
         <div className="mt-10 flex flex-wrap items-center gap-4">

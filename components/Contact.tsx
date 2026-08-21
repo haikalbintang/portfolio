@@ -1,23 +1,29 @@
 export default function Contact() {
   return (
-    <section id="contact" className="relative overflow-hidden bg-hero-gradient py-28 text-paper">
+    <section
+      id="contact"
+      className="relative overflow-hidden bg-hero-gradient py-28 text-paper"
+    >
       <div className="pointer-events-none absolute left-1/2 top-0 h-72 w-[36rem] -translate-x-1/2 rounded-full bg-pulse-violet/20 blur-[110px]" />
 
       <div className="relative mx-auto max-w-3xl px-6 text-center">
-        <p className="font-mono text-sm uppercase tracking-[0.3em] text-pulse-teal">Open for work</p>
+        <p className="font-mono text-sm uppercase tracking-[0.3em] text-pulse-teal">
+          Open for work
+        </p>
         <h2 className="mt-4 font-display text-3xl font-semibold tracking-tight sm:text-4xl">
           Have a project in mind? Let&apos;s build it.
         </h2>
         <p className="mx-auto mt-4 max-w-xl font-body text-paper/70">
-          Available for freelance engagements and full stack roles. I usually reply within a day.
+          Available for freelance engagements and full stack roles. I usually
+          reply within a day.
         </p>
 
         <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
           <a
-            href="mailto:you@example.com"
+            href="mailto:mhaikalbintang.work@gmail.com"
             className="rounded-full bg-pulse-gradient px-6 py-3 font-display text-sm font-semibold text-deep transition-transform hover:scale-105"
           >
-            you@example.com
+            mhaikalbintang.work@gmail.com
           </a>
           <a
             href="https://github.com/your-username"
