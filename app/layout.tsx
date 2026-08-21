@@ -24,16 +24,19 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Your Name — Full Stack Engineer",
+  title: "haikal.bintang",
   description:
-    "Full Stack Engineer specializing in React, Next.js, and TypeScript. Formerly trained in medicine, now building products. Open for freelance work.",
+    "Full Stack Developer specializing in React, Next.js, and TypeScript. Formerly trained in medicine, now building products. Open for freelance work.",
 };
 
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${spaceGrotesk.variable} ${inter.variable} ${jetbrainsMono.variable}`}>
+    <html
+      lang="en"
+      className={`${spaceGrotesk.variable} ${inter.variable} ${jetbrainsMono.variable}`}
+    >
       <body className="font-body antialiased">{children}</body>
     </html>
   );
