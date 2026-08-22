@@ -20,6 +20,14 @@ export default function Contact() {
           reply within a day.
         </p>
 
+        <div className="mx-auto mt-5 flex w-fit items-center gap-2 rounded-full border border-paper/15 px-4 py-1.5 font-mono text-xs text-paper/60">
+          <span className="flex h-3 w-4 flex-col overflow-hidden rounded-[2px]">
+            <span className="h-1/2 w-full bg-pulse-coral" />
+            <span className="h-1/2 w-full bg-paper" />
+          </span>
+          Jakarta, Indonesia · UTC+7
+        </div>
+
         <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
           <Link
             href="mailto:mhaikalbintang.work@gmail.com"

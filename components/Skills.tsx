@@ -5,14 +5,14 @@ const vitals = [
   {
     channel: "FE",
     label: "Front-End",
-    items: ["React.js", "Next.js", "TypeScript", "Tailwind CSS"],
+    items: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
     accent: "text-pulse-coral",
     bar: "bg-pulse-coral",
   },
   {
     channel: "BE",
     label: "Back-End",
-    items: ["Laravel", "FastAPI", "REST APIs"],
+    items: ["GO", "FastAPI", "Laravel", "REST APIs"],
     accent: "text-pulse-violet",
     bar: "bg-pulse-violet",
   },
