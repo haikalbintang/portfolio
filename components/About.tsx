@@ -13,7 +13,7 @@ const stops = [
   },
   {
     label: "Practice",
-    title: "Front-End Engineer, React · Next.js · TypeScript",
+    title: "Full Stack Engineer, React · Next.js · TypeScript",
     body: "Now building production interfaces and full stack features, pairing Laravel and FastAPI on the back end with React-based front ends.",
   },
 ];
@@ -31,12 +31,19 @@ export default function About() {
 
         <div className="mt-14 grid gap-8 sm:grid-cols-3">
           {stops.map((stop, i) => (
-            <div key={stop.title} className="relative rounded-2xl bg-white p-6 shadow-[0_1px_0_0_rgba(18,14,36,0.06)]">
+            <div
+              key={stop.title}
+              className="relative rounded-2xl bg-white p-6 shadow-[0_1px_0_0_rgba(18,14,36,0.06)]"
+            >
               <span className="font-mono text-xs uppercase tracking-widest text-pulse-violet">
                 0{i + 1} · {stop.label}
               </span>
-              <h3 className="mt-4 font-display text-lg font-semibold text-ink">{stop.title}</h3>
-              <p className="mt-3 font-body text-sm leading-relaxed text-ink/60">{stop.body}</p>
+              <h3 className="mt-4 font-display text-lg font-semibold text-ink">
+                {stop.title}
+              </h3>
+              <p className="mt-3 font-body text-sm leading-relaxed text-ink/60">
+                {stop.body}
+              </p>
             </div>
           ))}
         </div>

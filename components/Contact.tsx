@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Contact() {
   return (
     <section
@@ -19,28 +21,36 @@ export default function Contact() {
         </p>
 
         <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
-          <a
+          <Link
             href="mailto:mhaikalbintang.work@gmail.com"
             className="rounded-full bg-pulse-gradient px-6 py-3 font-display text-sm font-semibold text-deep transition-transform hover:scale-105"
           >
             mhaikalbintang.work@gmail.com
-          </a>
-          <a
-            href="https://github.com/your-username"
+          </Link>
+          <Link
+            href="https://github.com/haikalbintang"
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-full border border-paper/20 px-6 py-3 font-display text-sm font-semibold text-paper transition-colors hover:border-pulse-teal hover:text-pulse-teal"
           >
             GitHub
-          </a>
-          <a
-            href="https://linkedin.com/in/your-username"
+          </Link>
+          <Link
+            href="https://www.instagram.com/haikalbintang"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-full border border-paper/20 px-6 py-3 font-display text-sm font-semibold text-paper transition-colors hover:border-pulse-teal hover:text-pulse-teal"
+          >
+            Instagram
+          </Link>
+          <Link
+            href="https://linkedin.com/in/muhammad-haikal-bintang"
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-full border border-paper/20 px-6 py-3 font-display text-sm font-semibold text-paper transition-colors hover:border-pulse-teal hover:text-pulse-teal"
           >
             LinkedIn
-          </a>
+          </Link>
         </div>
       </div>
     </section>

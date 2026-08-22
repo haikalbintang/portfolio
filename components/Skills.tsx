@@ -1,3 +1,6 @@
+import { ExternalLink } from "lucide-react";
+import Link from "next/link";
+
 const vitals = [
   {
     channel: "FE",
@@ -14,9 +17,19 @@ const vitals = [
     bar: "bg-pulse-violet",
   },
   {
-    channel: "TL",
-    label: "Tools",
-    items: ["Git/Github", "Jira", "Docker"],
+    channel: "CC",
+    label: "Coding-Challenge",
+    items: [
+      { name: "LeetCode", url: "https://leetcode.com/u/haikalbintang/" },
+      {
+        name: "Codewars",
+        url: "https://www.codewars.com/users/haikalbintang99",
+      },
+      {
+        name: "HackerRank",
+        url: "https://www.hackerrank.com/profile/haikalbintang",
+      },
+    ],
     accent: "text-pulse-teal",
     bar: "bg-pulse-teal",
   },
@@ -51,12 +64,28 @@ export default function Skills() {
                 className={`mt-4 h-1 w-full rounded-full ${v.bar} opacity-70`}
               />
               <ul className="mt-5 space-y-2 font-body text-sm text-paper/70">
-                {v.items.map((item) => (
-                  <li key={item} className="flex items-center gap-2">
-                    <span className={`h-1.5 w-1.5 rounded-full ${v.bar}`} />
-                    {item}
-                  </li>
-                ))}
+                {v.items.map((item) => {
+                  const isLink = typeof item !== "string";
+                  const label = isLink ? item.name : item;
+                  return (
+                    <li key={label} className="flex items-center gap-2">
+                      <span className={`h-1.5 w-1.5 rounded-full ${v.bar}`} />
+                      {isLink ? (
+                        <Link
+                          href={item.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center gap-1.5 hover:text-paper transition-colors"
+                        >
+                          {label}
+                          <ExternalLink className="h-3 w-3 opacity-60" />
+                        </Link>
+                      ) : (
+                        label
+                      )}
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           ))}
