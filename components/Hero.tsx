@@ -21,7 +21,7 @@ export default function Hero() {
         </h1>
         <div className="lg:grid lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:gap-12">
           <div>
-            <h1 className="mt-6 max-w-3xl font-display text-5xl font-semibold leading-[1.05] tracking-tight sm:text-6xl md:text-7xl">
+            <h1 className="max-w-3xl font-display text-5xl font-semibold leading-[1.05] tracking-tight sm:text-6xl md:text-7xl">
               for a<span className="text-gradient"> terminal.</span>
             </h1>
 
@@ -48,7 +48,7 @@ export default function Hero() {
             </div>
           </div>
           <div className="mt-10">
-            <HeroSignature className="mt-12 aspect-[9/5] w-full lg:mt-0" />
+            <HeroSignature className="mt-12 aspect-[10/5] w-full lg:mt-0" />
           </div>{" "}
         </div>
 

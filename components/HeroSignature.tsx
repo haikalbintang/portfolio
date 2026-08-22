@@ -51,8 +51,8 @@ export default function HeroSignature({
 
         <defs>
           <linearGradient id="ecgStroke" x1="0" y1="0" x2="1" y2="0">
-            <stop offset="0%" stopColor="#5eead4" stopOpacity="0.5" />
-            <stop offset="100%" stopColor="#5eead4" />
+            <stop offset="0%" stopColor="#a78bfa" stopOpacity="0.5" />
+            <stop offset="100%" stopColor="#a78bfa" />
           </linearGradient>
         </defs>
 
@@ -61,7 +61,7 @@ export default function HeroSignature({
           <path
             d="M456,190 L432,220 L456,250"
             fill="none"
-            stroke="#a78bfa"
+            stroke="#5eead4"
             strokeWidth="6"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -71,14 +71,14 @@ export default function HeroSignature({
             y1="256"
             x2="500"
             y2="184"
-            stroke="#a78bfa"
+            stroke="#5eead4"
             strokeWidth="6"
             strokeLinecap="round"
           />
           <path
             d="M524,190 L548,220 L524,250"
             fill="none"
-            stroke="#a78bfa"
+            stroke="#5eead4"
             strokeWidth="6"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -93,7 +93,7 @@ export default function HeroSignature({
           height="48"
           rx="2"
           className="cursor-blink"
-          fill="#5eead4"
+          fill="#a78bfa"
         />
       </svg>
 
