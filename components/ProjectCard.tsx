@@ -32,16 +32,18 @@ export default function ProjectCard({ project }: { project: Project }) {
     >
       <div className="flex items-center justify-between">
         <span
-          className={`rounded-full ${accent.bgSoft} px-3 py-1 font-mono text-sm font-semibold ${accent.text}`}
+          className={`rounded-full ${accent.bgSoft} px-3 py-1 font-mono text-xs font-semibold ${accent.text}`}
         >
-          {project.name}
+          {project.vital}
         </span>
-        <p className="mt-1 font-mono text-xs uppercase tracking-wide text-ink/40">
-          {project.role}
-        </p>
-        {/* <span className="font-mono text-xs text-ink/40">{project.period}</span> */}
+        <span className="font-mono text-xs text-ink/40">{project.period}</span>
       </div>
-
+      <h3 className="mt-5 font-display text-xl font-semibold text-ink">
+        {project.name}
+      </h3>
+      <p className="mt-1 font-mono text-xs uppercase tracking-wide text-ink/40">
+        {project.role}
+      </p>
       <p className="mt-4 font-body text-sm leading-relaxed text-ink/65">
         {project.summary}
       </p>
