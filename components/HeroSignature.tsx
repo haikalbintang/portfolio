@@ -122,9 +122,9 @@ export default function HeroSignature({
         }
 
         @keyframes bracketPulse {
-          0%, 34%   { opacity: 0.45; }
+          0%, 34%   { opacity: 0.35; }
           36%, 80%  { opacity: 1; }
-          90%, 100% { opacity: 0.45; }
+          90%, 100% { opacity: 0.35; }
         }
 
         .cursor-blink {

@@ -12,15 +12,17 @@ export default function Hero() {
       <div className="pointer-events-none absolute -right-24 top-40 h-72 w-72 rounded-full bg-pulse-teal/20 blur-[100px]" />
 
       <div className="relative mx-auto max-w-6xl px-6">
+        <p className="font-mono text-sm uppercase tracking-[0.3em] text-pulse-teal">
+          Full Stack Engineer · Jakarta, Indonesia
+        </p>
+
+        <h1 className="col-span-2 mt-6 max-w-3xl font-display text-5xl font-semibold leading-[1.05] tracking-tight sm:text-6xl md:text-7xl">
+          I traded a stethoscope
+        </h1>
         <div className="lg:grid lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:gap-12">
           <div>
-            <p className="font-mono text-sm uppercase tracking-[0.3em] text-pulse-teal">
-              Full Stack Engineer · Jakarta, Indonesia
-            </p>
-
             <h1 className="mt-6 max-w-3xl font-display text-5xl font-semibold leading-[1.05] tracking-tight sm:text-6xl md:text-7xl">
-              I traded a stethoscope for a
-              <span className="text-gradient"> terminal.</span>
+              for a<span className="text-gradient"> terminal.</span>
             </h1>
 
             <p className="mt-6 max-w-xl font-body text-lg leading-relaxed text-paper/70">
@@ -45,8 +47,9 @@ export default function Hero() {
               </a>
             </div>
           </div>
-
-          <HeroSignature className="mt-12 aspect-[8/5] w-full lg:mt-0" />
+          <div className="mt-10">
+            <HeroSignature className="mt-12 aspect-[9/5] w-full lg:mt-0" />
+          </div>{" "}
         </div>
 
         {/* signature pulse line: heartbeat resolving into a code bracket */}
