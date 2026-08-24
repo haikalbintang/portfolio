@@ -12,7 +12,7 @@ export default function Projects() {
   const visible = showAll ? projects : projects.slice(0, INITIAL_COUNT);
 
   return (
-    <section id="work" className="bg-paper2 pt-28 pb-12">
+    <section id="work" className="bg-paper2 pt-28 pb-20">
       <div className="mx-auto max-w-6xl px-6">
         <div className="flex items-end justify-between gap-6">
           <div>
